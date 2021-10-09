@@ -34,17 +34,3 @@ footer #nondisclaimer {
 footer .icons img {
     width: 26px;
 }
-
-/* section.column.logo img {
-    width: 150px;
-    float: right;
-} */
-section.column.logo::after {
-    content:"";
-    clear:both;
-
-}
-.column.logo {
-    overflow: auto;
-    /* display:inline-block; */
-}
