@@ -1,16 +1,47 @@
+/* Global */
+
+h3.title {
+    text-decoration: underline solid #FFF;
+    line-height: 2em;
+}
+
+/* begin header */
 header {
     padding: 30px;
     background:rgba(0,0,0,.6);
     /* position: fixed; */
-    display:flex;
+    display: flexbox;
 }
 nav ul li a {
     color: #FFF;
 }
+.navbar-toggler {
+    background: rgb(49, 49, 49);
+}
 
+.nav-link {
+    color: #FFF;
+    padding: 5px 10px 5px 10px;
+
+}
+
+.nav-link.active {
+    background: #8CC63F;
+
+}
+
+.navbar-brand {
+    margin-right: 100px;
+}
+div .collapse.navbar-collapse {
+    margin-top: 30px;
+}
 .logo img{
     width: 150px;
 }
+/* end header */
+
+/* begin footer */
 footer {
     padding: 120px 20px 20px;
     background: linear-gradient(to bottom, rgba(69,68,68,0.9248074229691877) 50%, rgba(0,0,0,1) 100%);
@@ -34,3 +65,4 @@ footer #nondisclaimer {
 footer .icons img {
     width: 26px;
 }
+/* end footer */
