@@ -47,6 +47,15 @@ h3.title {
 
 * {
     font-family: 'NunitoSans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 /* begin header */
@@ -89,6 +98,34 @@ div .collapse.navbar-collapse {
 }
 /* end header */
 /* begin Sustainability Roadmap */
+div #sustainRM {
+    height: 800px; 
+    color: white;
+    padding-top: 10%;
+    position: relative;
+}
+#sustainRM::before {    
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/GreenTeamEVFY/website\ images/sustainRM-bg.webp');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+}
+#sustainRM .row {
+    padding: 1em 20em 0em 5em;
+}
+#sustainRM h1 {
+    text-align: right;
+    font-size: 40pt;
+}
+#sustainRM p {
+    font-size: 25px;
+    margin: 0 0 25px;
+}
 
 /* end Sustainability roadmap */
 /* begin footer */
