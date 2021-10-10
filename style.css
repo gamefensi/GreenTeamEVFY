@@ -1,14 +1,59 @@
 /* Global */
+a {
+    background-color: transparent;
+    color: #8cc63f;
+    font-weight: 700;
+}
 
 h3.title {
     text-decoration: underline solid #FFF;
     line-height: 2em;
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: NunitoSans;
+    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Light.ttf");
+    font-weight:lighter;
+}
+@font-face {
+    font-family: NunitoSans;
+    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-LightItalic.ttf");
+    font-weight: lighter;
+    font-style: italic;
+}
+@font-face {
+    font-family: NunitoSans;
+    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: NunitoSans;
+    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: NunitoSans;
+    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: NunitoSans;
+    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    font-family: 'NunitoSans', Arial, Helvetica, sans-serif;
 }
 
 /* begin header */
 header {
     padding: 30px;
-    background:rgba(0,0,0,.6);
+    background: rgb(69,68,68);
+    background: linear-gradient(0deg, rgba(69,68,68,0) 0%, rgb(0, 0, 0) 100%);
     /* position: fixed; */
     display: flexbox;
 }
@@ -19,7 +64,7 @@ nav ul li a {
     background: rgb(49, 49, 49);
 }
 
-.nav-link {
+.navbar-nav .nav-item {
     color: #FFF;
     padding: 5px 10px 5px 10px;
 
@@ -36,11 +81,16 @@ nav ul li a {
 div .collapse.navbar-collapse {
     margin-top: 30px;
 }
+.nav-item {
+    font-size: 18pt;
+}
 .logo img{
     width: 150px;
 }
 /* end header */
+/* begin Sustainability Roadmap */
 
+/* end Sustainability roadmap */
 /* begin footer */
 footer {
     padding: 120px 20px 20px;
@@ -59,7 +109,19 @@ footer section {
     width: 100%;
     max-width: 33.3%;
 }
-footer #nondisclaimer {
+footer section.column p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Nunito Sans',sans-serif;
+}
+footer .disclaimer {
+    width: 100%;
+    max-width: 1720px;
+    margin: 100px auto 0;
+    font-size: 16px;
+    padding-top: 20px;
+    color: #fff;
+    line-height: 27px;
     text-align: center;
 }
 footer .icons img {
