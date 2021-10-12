@@ -1,167 +1,249 @@
 /* Global */
 a {
-    background-color: transparent;
-    color: #8cc63f;
-    font-weight: 700;
+  background-color: transparent;
+  color: #8cc63f;
+  font-weight: 700;
 }
 
 h3.title {
-    text-decoration: underline solid #FFF;
-    line-height: 2em;
-    font-size: 30px;
+  text-decoration: underline solid #fff;
+  line-height: 2em;
+  font-size: 30px;
 }
 
 @font-face {
-    font-family: NunitoSans;
-    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Light.ttf");
-    font-weight:lighter;
+  font-family: NunitoSans;
+  src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Light.ttf");
+  font-weight: lighter;
 }
 @font-face {
-    font-family: NunitoSans;
-    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-LightItalic.ttf");
-    font-weight: lighter;
-    font-style: italic;
+  font-family: NunitoSans;
+  src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-LightItalic.ttf");
+  font-weight: lighter;
+  font-style: italic;
 }
 @font-face {
-    font-family: NunitoSans;
-    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Regular.ttf");
-    font-weight: normal;
+  font-family: NunitoSans;
+  src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Regular.ttf");
+  font-weight: normal;
 }
 @font-face {
-    font-family: NunitoSans;
-    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Italic.ttf");
-    font-weight: normal;
-    font-style: italic;
+  font-family: NunitoSans;
+  src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
 }
 @font-face {
-    font-family: NunitoSans;
-    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Bold.ttf");
-    font-weight: bold;
+  font-family: NunitoSans;
+  src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Bold.ttf");
+  font-weight: bold;
 }
 @font-face {
-    font-family: NunitoSans;
-    src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-BoldItalic.ttf");
-    font-weight: bold;
-    font-style: italic;
+  font-family: NunitoSans;
+  src: url("/GreenTeamEVFY/Font/NunitoSans/NunitoSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
 }
 
 * {
-    font-family: 'NunitoSans', Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  font-family: "NunitoSans", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 /* begin header */
 header {
-    padding: 30px;
-    background: rgb(69,68,68);
-    background: linear-gradient(0deg, rgba(69,68,68,0) 0%, rgb(0, 0, 0) 100%);
-    /* position: fixed; */
-    display: flexbox;
+  padding: 30px;
+  background: rgb(69, 68, 68);
+  background: linear-gradient(0deg, rgba(69, 68, 68, 0) 0%, rgb(0, 0, 0) 100%);
+  /* position: fixed; */
+  display: flexbox;
 }
 nav ul li a {
-    color: #FFF;
+  color: #fff;
 }
 .navbar-toggler {
-    background: rgb(49, 49, 49);
+  background: rgb(49, 49, 49);
 }
 
 .navbar-nav .nav-item {
-    color: #FFF;
-    padding: 5px 10px 5px 10px;
-
+  color: #fff;
+  padding: 5px 10px 5px 10px;
 }
 
 .nav-link.active {
-    background: #8CC63F;
-
+  background: #8cc63f;
 }
 
 .navbar-brand {
-    margin-right: 100px;
+  margin-right: 100px;
 }
 div .collapse.navbar-collapse {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .nav-item {
-    font-size: 18pt;
+  font-size: 18pt;
 }
-.logo img{
-    width: 150px;
+.logo img {
+  width: 150px;
 }
 /* end header */
 /* begin Sustainability Roadmap */
 div #sustainRM {
-    height: 800px; 
-    color: white;
-    padding-top: 10%;
-    position: relative;
+  height: 800px;
+  color: white;
+  padding-top: 10%;
+  position: relative;
 }
-#sustainRM::before {    
-    content: "";
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/GreenTeamEVFY/website\ images/sustainRM-bg.webp');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-
+#sustainRM::before {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("/GreenTeamEVFY/website\ images/sustainRM-bg.webp");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 #sustainRM .row {
-    padding: 1em 20em 0em 5em;
+  padding: 1em 20em 0em 5em;
 }
 #sustainRM h1 {
-    text-align: right;
-    font-size: 40pt;
+  text-align: right;
+  font-size: 40pt;
 }
 #sustainRM p {
-    font-size: 25px;
-    margin: 0 0 25px;
+  font-size: 25px;
+  margin: 0 0 25px;
 }
 
 /* end Sustainability roadmap */
 /* begin footer */
 footer {
-    padding: 120px 20px 20px;
-    background: linear-gradient(to bottom, rgba(69,68,68,0.9248074229691877) 50%, rgba(0,0,0,1) 100%);
-    color: #FFF;
+  padding: 120px 20px 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(69, 68, 68, 0.9248074229691877) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: #fff;
 }
 footer .footer-inner-container {
-    width: 100%;
-    max-width: 1720px;
-    margin: 0 auto;
-    display: flex;
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  display: flex;
 }
 footer section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 33.3%;
 }
 footer section.column p {
-    color: #fff;
-    font-size: 25px;
-    font-family: 'Nunito Sans',sans-serif;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Nunito Sans", sans-serif;
 }
 footer .disclaimer {
-    width: 100%;
-    max-width: 1720px;
-    margin: 100px auto 0;
-    font-size: 16px;
-    padding-top: 20px;
-    color: #fff;
-    line-height: 27px;
-    text-align: center;
+  width: 100%;
+  max-width: 1720px;
+  margin: 100px auto 0;
+  font-size: 16px;
+  padding-top: 20px;
+  color: #fff;
+  line-height: 27px;
+  text-align: center;
 }
 footer .icons img {
-    width: 26px;
+  width: 26px;
 }
 /* end footer */
+
+/* contact form*/
+#contactUs {
+  background-color: white;
+  border: none;
+  opacity: 0.8;
+  padding: 1em 2em 1em 2em;
+  margin: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 58% auto;
+  background-color: #2196f3;
+  padding: 15px;
+  background-image: url(/website\ images/iStock-1091251306.jpg);
+  background-size: cover;
+}
+
+/*.col-form-label {
+    height:25px;
+    vertical-align: baseline;
+  }
+  */
+
+input.form-control {
+  background-color: lightgray;
+  opacity: 1;
+  height: 25px;
+  border-radius: 0;
+  border: solid gray 0.5px;
+}
+
+.button {
+    display: inline-block;
+}
+
+input[type="button"] {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#reset {
+    width:100px;
+    font-weight: bold;
+    font-size:large;
+    border: none;
+    border-radius: 10px;
+    height:30px;
+    margin-left:20em;
+    color:white;
+    background-color: gray;
+
+  }
+
+#send {
+    margin-left:1.5em;
+    width:100px;
+    font-weight: bold;
+    font-size:large;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background-color:LimeGreen;
+  }
+
+#codes {
+  background-color: skyBlue;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: small;
+  height: 25px;
+}
+/*end of contact form */
