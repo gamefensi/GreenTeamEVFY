@@ -165,3 +165,111 @@ footer .icons img {
     width: 26px;
 }
 /* end footer */
+
+
+/* Partnership Section */
+
+.page1 {
+  background-image:url(/website%20images/iStock-1281885421.jpg);
+  repeat:norepeat;
+  height:650px;
+  background-size: cover;
+  background-position:center center;
+}
+
+.page1 > h1
+{font-size:80px;
+  padding-top:1em;
+  text-align:center;
+}
+
+.page2 h1 {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item1 {
+  background-color:lightgray;
+  padding:2em 0 1em 2em;
+}
+
+.item2 {
+  padding-top:2em;
+  padding:2em 0 1em 2em;
+}
+/* End of Partnership Section */
+
+/* contact form*/
+#contactUs {
+  background-image: url(/website%20images/iStock-1091251306.jpg);
+  background-size: cover;
+}
+
+#contactForm {
+  background-color: white;
+  border: none;
+  opacity: 0.8;
+  padding: 1em 2em 1em 2em;
+  margin: 1em;
+}
+
+#contactUs >.grid-container {
+  display: grid;
+  grid-template-columns: 58% auto;
+  padding: 15px;
+}
+
+input.form-control {
+  background-color: lightgray;
+  opacity: 1;
+  height: 25px;
+  border-radius: 0;
+  border: solid gray 0.5px;
+}
+
+.button {
+    display: inline-block;
+}
+
+input[type="button"] {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#reset {
+    width:100px;
+    font-weight: bold;
+    font-size:large;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background-color: gray;
+
+  }
+
+#send {
+    margin-left:1.5em;
+    width:100px;
+    font-weight: bold;
+    font-size:large;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background-color:LimeGreen;
+  }
+
+#codes {
+  background-color: skyBlue;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: small;
+  height: 25px;
+}
+/*End of contact form */
