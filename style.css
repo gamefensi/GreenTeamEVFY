@@ -1,3 +1,12 @@
+/*
+Bootstrap Breakpoints: 
+ X-Small	None	<576px
+ Small	sm	≥576px
+ Medium	md	≥768px
+ Large	lg	≥992px
+ Extra large	xl	≥1200px
+ Extra extra large	xxl	≥1400px
+*/
 /* Global */
 
 @font-face {
@@ -39,6 +48,57 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #f0f0f0;
+}
+/* xs screens */
+@media screen and (min-width: 200px) {
+	p {
+		font-size: 1rem;
+	}
+	#sustainRM h1 {
+		text-align: center;
+	}
+}
+/* => small screens */
+@media screen and (min-width: 576px) {
+	html {
+		font-size: 1.1rem;
+	}
+}
+/* => medium screens */
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 1.2rem;
+	}
+}
+/* => large screens */
+@media screen and (min-width: 992px) {
+	html {
+		font-size: 1.3rem;
+	}
+
+}
+
+/* >= xlarge screens */
+@media screen and (min-width: 1200px) {
+	html {
+		font-size: 1.4rem;
+	}
+	#sustainRM h1 {
+		text-align: right;
+	}
+}
+
+/* >= xxlarge screens */
+@media screen and (min-width: 1400px) {
+	html {
+		font-size: 1.5rem;
+	}
+}
+
+/* End Media Queries */
+
 /* Begin Body */
 body div a {
 	background-color: transparent;
@@ -74,7 +134,8 @@ h1 u {
 /* Begin Header */
 
 .navbar-toggler {
-	background: rgb(49, 49, 49);
+	/* background: rgb(49, 49, 49); */
+	color: white;
 }
 .navbar-nav .nav-item {
 	padding: 5px 10px 5px 10px;
@@ -90,6 +151,7 @@ div .collapse.navbar-collapse {
 }
 .nav-item {
 	font-size: 18pt;
+	text-align: center;
 }
 .logo img {
 	width: 150px;
@@ -101,11 +163,34 @@ nav {
 	display: flexbox;
 	z-index: 1001;
 }
-.blackBox {
-    height: 163px;
-    background-color: Black;
+
+/* dropdown */
+
+ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
+	display: block;
+	background: linear-gradient(180deg, #8cc63f 0%, #4e7512 100%);
+	color: white;
 }
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-menu {
+	min-width: 50px;
+	border-radius: 0%;
+	border: none;
+}
+.dropdown-menu li {
+	padding: 6px 16px 6px 16px;
+}
+
+.dropdown-menu li a {
+	/* border: #751212 solid 1px; */
+	color: white;
+}
+
 /* End Header */
+
 /* Begin Landing section */
 .centerTextBox {
 	/* height: 50%; */
@@ -121,24 +206,32 @@ nav {
 	height: 1000px;
 	width: 100%;
 	padding: 20% 0 40% 0;
-	background: no-repeat url("/website\ images/landingBG.jpg");
+	background: no-repeat url('/website\ images/landingBG.jpg');
 	background-size: cover;
 }
 #landingCTA {
-	background: rgb(186,223,137);
-	background: linear-gradient(180deg, #8cc63f 0%, #4E7512 100%);
+	background: rgb(186, 223, 137);
+	background: linear-gradient(180deg, #8cc63f 0%, #4e7512 100%);
 	border: #8cc63f;
 	padding: 10px;
 	font-size: large;
 	color: #fff;
 }
+#landingCTA:hover {
+	/* color: #4e7512; */
+	transform: scale(1.05, 1.05);
+}
+#landingCTA:active {
+	border: none;
+		
+}
 /* End Landing Section */
 /* Begin  About Section */
 #about {
 	width: 100%;
-	height: 700px;
+	height: 1000px;
 	position: relative;
-	background: no-repeat url("/website\ images/iStock-1214243583.jpg");
+	background: no-repeat url('/website\ images/iStock-1214243583.jpg');
 	background-position: center;
 	background-size: cover;
 }
@@ -157,7 +250,7 @@ nav {
 	margin: 9em 9em 10em 40em;
 	background: rgba(255, 255, 255, 0.7);
 	text-align: justify;
-}  
+}
 .aboutImg {
 	width: 40%;
 	height: 32em;
@@ -168,7 +261,7 @@ nav {
 	border-width: 1.2em;
 	border-style: solid;
 	border-color: rgba(255, 255, 255, 0.7);
-	background: no-repeat url("/website\ images/iStock-947959208.jpg");
+	background: no-repeat url('/website\ images/iStock-947959208.jpg');
 	background-position: center;
 	background-size: cover;
 }
@@ -177,17 +270,17 @@ nav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color:rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.7);
 	padding: 2.5rem;
 }
 #mission h3 {
 	font-family: bold;
-  	color: #8cc63f;
+	color: #8cc63f;
 }
 .missionImg {
 	width: 100%;
-    height: 600px;
-	background: no-repeat url("/website\ images/iStock-533578039.jpg");
+	height: 600px;
+	background: no-repeat url('/website\ images/iStock-533578039.jpg');
 	background-position: center;
 	background-size: 70%;
 }
@@ -196,12 +289,12 @@ nav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color:rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.7);
 	padding: 2em;
 }
 #team h3 {
 	font-family: bold;
-  	color: #8cc63f;
+	color: #8cc63f;
 	text-align: justify;
 }
 .teamInfo {
@@ -209,8 +302,8 @@ nav {
 }
 .teamImg {
 	width: 100%;
-    height: 600px;
-	background: no-repeat url("/website\ images/iStock-537599600.jpg");
+	height: 600px;
+	background: no-repeat url('/website\ images/iStock-537599600.jpg');
 	background-position: center;
 	background-size: 100%;
 }
@@ -221,7 +314,7 @@ nav {
 	gap: 6em;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color:rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.7);
 }
 #teamMember h5 {
 	color: #8cc63f;
@@ -235,14 +328,15 @@ nav {
 .teamHeadShots img {
 	clip-path: circle(50%);
 	-webkit-filter: grayscale(100%);
-  	filter: grayscale(100%);
-} 
+	filter: grayscale(100%);
+}
 /* End About Section */
 
 /* Begin Sustainability Index */
 #sustainabilityIndex1 {
 	height: 700px;
-	background: no-repeat center/cover url("/website\ images/iStock-943875208.jpg");
+	background: no-repeat center/cover
+		url('/website\ images/iStock-943875208.jpg');
 	background-position: center;
 	background-size: 100%;
 }
@@ -257,7 +351,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color:rgba(255, 255, 255, 0.7);
+	/* background-color: rgba(255, 255, 255, 0.7); */
 	padding: 2em;
 }
 .sustainabilityInfo {
@@ -266,12 +360,12 @@ nav {
 #sustainabilityIndex2 h3 {
 	font-family: bold;
 	font-weight: 30em;
-  	color: #8cc63f;
+	color: #8cc63f;
 }
 .sustainabilityIndexImg {
 	width: 100%;
-    height: 600px;
-	background: no-repeat url("/website\ images/iStock-1295057140.jpg");
+	height: 600px;
+	background: no-repeat url('/website\ images/iStock-1295057140.jpg');
 	background-position: center;
 	background-size: 90%;
 }
@@ -280,12 +374,12 @@ nav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color:rgba(255, 255, 255, 0.7);
+	/* background-color: rgba(255, 255, 255, 0.7); */
 	padding: 2em;
 }
 #sustainabilityIndex3 h4 {
 	font-family: bold;
-  	color: #8cc63f;
+	color: #8cc63f;
 	text-align: justify;
 }
 .methodologyInfo {
@@ -293,8 +387,8 @@ nav {
 }
 .methodologyImg {
 	width: 100%;
-    height: 600px;
-	background: no-repeat url("/website\ images/iStock-956436966 copy.jpg");
+	height: 600px;
+	background: no-repeat url('/website\ images/iStock-956436966 copy.jpg');
 	background-position: center;
 	background-size: 100%;
 }
@@ -302,7 +396,7 @@ nav {
 
 /* Begin Sustainability Roadmap */
 div #sustainRM {
-	height: auto;
+	height: 1000px;
 	color: white;
 	padding-top: 20%;
 	position: relative;
@@ -321,14 +415,11 @@ div #sustainRM {
 	left: 0px;
 }
 #sustainRM .row {
-	padding: 1em 20em 0em 5em;
-}
-#sustainRM h1 {
-	text-align: right;
-	font-size: 40pt;
+	/* padding: 1em 20em 0em 5em; */
+	max-width: 70%;
+	margin: auto;
 }
 #sustainRM p {
-	/* font-size: 25px; */
 	margin: 0 0 25px;
 }
 
@@ -339,7 +430,7 @@ div #sustainRM {
 .page1 {
 	background-image: url(/website%20images/iStock-1281885421.jpg);
 	background-repeat: norepeat;
-	height: 650px;
+	height: 1000px;
 	background-size: cover;
 	background-position: center center;
 }
@@ -357,7 +448,7 @@ div #sustainRM {
 }
 
 #item1 {
-	background-color: lightgray;
+	/* background-color: lightgray;*/
 	padding: 3em 4em 3em 5em;
 }
 
@@ -366,11 +457,12 @@ div #sustainRM {
 }
 
 #item2 {
+	background-color: #fff;
 	padding: 3em 4em 4em 5em;
 }
 
 #item3 {
-	background-color: lightgray;
+	/* background-color: lightgray; */
 	padding: 3em 4em 2em 5em;
 }
 
@@ -380,23 +472,6 @@ div #sustainRM {
 
 #item3 p {
 	padding: 3em 2em 3em 0;
-}
-
-/*partnership dropdown */
-
-ul.navbar-nav li.dropdown:hover ul.dropdown-menu { 
-	display: block; 
-	background-color: #8cc63f;
-	color:white;
-}
-.dropdown a {
-	color: white;
-	padding: 12px 16px;
-	
-}
-.dropdown {
-	position:relative;
-	display:inline-block;
 }
 
 /* End of Partnership Section */
