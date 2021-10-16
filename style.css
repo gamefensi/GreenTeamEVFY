@@ -65,6 +65,10 @@ p {
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 }
+
+h1 u {
+	text-decoration-color: #8cc63f;
+}
 /* End Body */
 
 /* Begin Header */
@@ -78,7 +82,6 @@ p {
 .nav-link.active {
 	background: #8cc63f;
 }
-
 .navbar-brand {
 	margin-right: 100px;
 }
@@ -105,13 +108,29 @@ nav {
 /* End Header */
 /* Begin Landing section */
 .centerTextBox {
-	width: 70%;
+	/* height: 50%; */
+	max-width: 50%;
+	text-align: center;
+	margin: auto;
+	padding: 25px;
+	/* margin: 30% auto 30% auto; */
 	background-color: rgba(255, 255, 255, 0.7);
 }
-.landingInfo {
-	height: 700px;
-	background: no-repeat url("website\ images\Copy of iStock-624948094.jpg");
 
+.landingInfo {
+	height: 1000px;
+	width: 100%;
+	padding: 20% 0 40% 0;
+	background: no-repeat url("/website\ images/landingBG.jpg");
+	background-size: cover;
+}
+#landingCTA {
+	background: rgb(186,223,137);
+	background: linear-gradient(180deg, #8cc63f 0%, #4E7512 100%);
+	border: #8cc63f;
+	padding: 10px;
+	font-size: large;
+	color: #fff;
 }
 /* End Landing Section */
 /* Begin  About Section */
