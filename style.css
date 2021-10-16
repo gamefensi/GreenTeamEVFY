@@ -104,7 +104,15 @@ nav {
 }
 /* End Header */
 /* Begin Landing section */
-	
+.centerTextBox {
+	width: 70%;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.landingInfo {
+	height: 700px;
+	background: no-repeat url("website\ images\Copy of iStock-624948094.jpg");
+
+}
 /* End Landing Section */
 /* Begin  About Section */
 #about {
@@ -301,7 +309,7 @@ div #sustainRM {
 	font-size: 40pt;
 }
 #sustainRM p {
-	font-size: 25px;
+	/* font-size: 25px; */
 	margin: 0 0 25px;
 }
 
