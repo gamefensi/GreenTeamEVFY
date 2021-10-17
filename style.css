@@ -44,7 +44,7 @@ Bootstrap Breakpoints:
 }
 
 * {
-	font-family: 'NunitoSans', Arial, Helvetica, sans-serif;
+	font-family: 'NunitoSans', Arial, Helvetica, sans-serif !important;
 	box-sizing: border-box;
 }
 
@@ -59,25 +59,38 @@ body {
 	#sustainRM h1 {
 		text-align: center;
 	}
+	#phoneTop {
+		width: 69px;
+	}
+	#phoneBottom {
+		width: 225px;
+	}
 }
 /* => small screens */
 @media screen and (min-width: 576px) {
 	html {
 		font-size: 1.1rem;
 	}
+
 }
 /* => medium screens */
 @media screen and (min-width: 768px) {
 	html {
 		font-size: 1.2rem;
 	}
+	#phoneTop {
+		width: 115px;
+	}
+	#phoneBottom {
+		width: 375px;
+	}
+
 }
 /* => large screens */
 @media screen and (min-width: 992px) {
 	html {
 		font-size: 1.3rem;
 	}
-
 }
 
 /* >= xlarge screens */
@@ -87,6 +100,12 @@ body {
 	}
 	#sustainRM h1 {
 		text-align: right;
+	}
+	#phoneTop {
+		width: 184px;
+	}
+	#phoneBottom {
+		width: 600px;
 	}
 }
 
@@ -223,7 +242,6 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 }
 #landingCTA:active {
 	border: none;
-		
 }
 /* End Landing Section */
 /* Begin  About Section */
@@ -416,11 +434,49 @@ div #sustainRM {
 }
 #sustainRM .row {
 	/* padding: 1em 20em 0em 5em; */
-	max-width: 70%;
+	/* max-width: 70%; */
 	margin: auto;
 }
 #sustainRM p {
 	margin: 0 0 25px;
+}
+#sustainMockup .row div {
+	/* margin: % auto; */
+	/* padding-top: 20%;
+	padding-bottom: 20%; */
+	border: black solid 1px;
+}
+.imgWrapper {
+	padding: 25% 0;
+}
+.infoWrapper {
+	padding: 10% 5% 0 5%;
+}
+.imgWrapper,
+#sustainMockup .row,
+#sustainMockup, #SRM {
+	position: relative;
+	height: 100%;
+}
+
+#phoneTop,
+#phoneBottom {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 1;
+}
+#phoneTop {
+	z-index: 1001;
+}
+#phoneBottom {
+	z-index: 1000;
+}
+#sustainMockup h2 {
+	color: #8cc63f;
 }
 
 /* end Sustainability Roadmap */
