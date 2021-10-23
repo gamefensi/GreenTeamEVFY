@@ -85,6 +85,12 @@ Bootstrap Breakpoints:
 		bottom: 0px;
 		left: 0px;
 	}
+	#about h1 {
+		margin: 50px auto;
+	}
+	#aboutPara {
+		margin: 20px;
+	}
 }
 /* => small screens */
 @media screen and (min-width: 576px) {
@@ -96,9 +102,7 @@ Bootstrap Breakpoints:
 		width: 100%;
 		font-size: 1rem;
 	}
-	#aboutPara {
-		margin: 20px;
-	}
+
 }
 /* => medium screens */
 @media screen and (min-width: 768px) {
@@ -119,14 +123,13 @@ Bootstrap Breakpoints:
 		width: 100%;
 		font-size: 1.1rem;
 	}
+
 	#about{
 		background: no-repeat  url('/website\ images/aboutBG.jpg');
 		background-size: cover;
-		background-position: left center;
+		background-position: -200px center;
 	}
-	#sustainRM::before {
-		
-	}
+
 
 }
 /* => large screens */
@@ -153,6 +156,16 @@ Bootstrap Breakpoints:
 	}
 	#aboutPara {
 		margin-right: 50px;
+		margin-bottom: 100px;
+	}
+	#about {
+		background: no-repeat  url('/website\ images/aboutBG.jpg');
+		background-size: cover;
+		background-position: 200 top;
+	}
+	#about h1 {
+		width: 100px;
+		margin-left: 30px;
 	}
 
 }
@@ -174,6 +187,9 @@ Bootstrap Breakpoints:
 	#sustainTable .button {
 		width: 25%;
 	}
+	#sustainabilityIndex h1 {
+		font-size: 70px;
+	}
 
 }
 
@@ -186,6 +202,12 @@ Bootstrap Breakpoints:
 		width: 50%;
 		font-size: 1.6rem;
 	}
+	#about{
+		background: no-repeat  url('/website\ images/aboutBG.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+	
 }
 
 /* End Media Queries */
@@ -343,15 +365,11 @@ h1 u {
 /* Begin  About Section */
 #about {
 	width: 100%;
-	height: 1000px;
 	position: relative;
-	padding-top: 14%;
+	padding-top: 10%;
 	
 }
-#about h1 {
-	width: 100px;
-	margin-left: 90px;
-}
+
 .aboutInfo {
 	/* padding: 5em; */
 	width: 100%;
@@ -438,7 +456,7 @@ h1 u {
 	background-size: 100%;
 }
 #teamMember {
-	height: 700px;
+	/* height: 700px; */
 	display: flex;
 	flex-wrap: wrap;
 	gap: 6em;
@@ -468,11 +486,10 @@ h1 u {
 	background: no-repeat center/cover
 		url('/website\ images/iStock-943875208.jpg');
 	background-position: center;
-	background-size: 100%;
+	/* background-size: 100%; */
 }
 #sustainabilityIndex1 h1 {
 	font-weight: bold;
-	font-size: 70px;
 	text-align: center;
 	padding-top: 2em;
 }
@@ -532,10 +549,7 @@ div #sustainRM {
 	position: relative;
 	padding-bottom: 20%;
 }
-#sustainRM::before {
 
-
-}
 #sustainRM .row {
 	/* padding: 1em 20em 0em 5em; */
 	/* max-width: 70%; */
