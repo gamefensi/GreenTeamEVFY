@@ -685,7 +685,6 @@ div #sustainRM {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size:16px;
-	margin:auto;
 
 }
 
@@ -714,9 +713,9 @@ input.form-control {
 	border: solid gray 0.5px;
 }
 
-.button {
+/* .button {
 	display: inline-block;
-}
+} */
 
 input[type='button'] {
 	display: inline-block;
@@ -729,35 +728,33 @@ input[type='button'] {
 }
 
 #reset {
-	width: 100px;
 	font-weight: bold;
-	font-size: large;
+	font-size: 16px;
 	border: none;
 	border-radius: 10px;
 	color: white;
-	background-color: gray;
 }
 
 #send {
 	/* margin-left: 1.5em; */
 	width: 100px;
 	font-weight: bold;
-	font-size: large;
+	font-size: 16px;
 	border: none;
 	border-radius: 10px;
 	color: white;
-	background-color: LimeGreen;
 }
 
 #codes {
-	background-color: skyBlue;
+	background-color: cornflowerblue;
 	font-weight: bold;
 	color: white;
 	text-align: center;
 	/* width: 100px; */
 	/* font-size: small; */
-	/* height: 25px; */
+	height: 30px;
 }
+
 /*End of contact form */
 
 /* begin footer */
