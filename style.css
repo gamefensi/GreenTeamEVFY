@@ -71,7 +71,6 @@ body {
 	html {
 		font-size: 1.1rem;
 	}
-
 }
 /* => medium screens */
 @media screen and (min-width: 768px) {
@@ -84,12 +83,17 @@ body {
 	#phoneBottom {
 		width: 375px;
 	}
-
 }
 /* => large screens */
 @media screen and (min-width: 992px) {
 	html {
 		font-size: 1.3rem;
+	}
+	#sustainTable p {
+		width: 70%;
+	}
+	#sustainTable table {
+		width: 70%;
 	}
 }
 
@@ -178,7 +182,11 @@ div .collapse.navbar-collapse {
 nav {
 	padding: 30px;
 	background: rgb(69, 68, 68);
-	background: linear-gradient(0deg, rgba(69, 68, 68, 0) 0%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(
+		0deg,
+		rgba(69, 68, 68, 0) 0%,
+		rgb(0, 0, 0) 100%
+	);
 	display: flexbox;
 	z-index: 1001;
 }
@@ -440,11 +448,14 @@ div #sustainRM {
 #sustainRM p {
 	margin: 0 0 25px;
 }
-#sustainMockup .row div {
+/* #sustainMockup .row div {
 	/* margin: % auto; */
-	/* padding-top: 20%;
+/* padding-top: 20%;
 	padding-bottom: 20%; */
-	border: black solid 1px;
+/* border: black solid 1px; 
+}*/
+#sustainMockup {
+	height: 1000px;
 }
 .imgWrapper {
 	padding: 25% 0;
@@ -454,7 +465,8 @@ div #sustainRM {
 }
 .imgWrapper,
 #sustainMockup .row,
-#sustainMockup, #SRM {
+#sustainMockup,
+#SRM {
 	position: relative;
 	height: 100%;
 }
@@ -477,6 +489,46 @@ div #sustainRM {
 }
 #sustainMockup h2 {
 	color: #8cc63f;
+}
+#sustainTable {
+	height: 1000px;
+	padding-top: 10%;
+}
+#sustainTable p {
+	margin: 20px auto;
+}
+#sustainTable h2 {
+	text-align: center;
+	color: #8cc63f;
+}
+#sustainTable table {
+	margin: 25px auto;
+}
+#sustainTable table td,
+#sustainTable table th {
+	border: rgb(255, 255, 255) solid 1px;
+}
+#sustainTable table thead th {
+	text-align: center;
+	border-bottom: rgb(255, 255, 255) solid 3px;
+	background: #70ad47;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+}
+#sustainTable table td:not(:first-child) {
+	font-size: smaller;
+	vertical-align: top;
+}
+#sustainTable table td:first-child {
+	font-weight: bold;
+	vertical-align: middle;
+}
+#sustainTable table tbody td {
+	background: #d5e3cf;
+}
+#sustainTable table tfoot td {
+	text-align: center;
+	background: #ebf1e9;
 }
 
 /* end Sustainability Roadmap */
