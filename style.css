@@ -48,9 +48,9 @@ Bootstrap Breakpoints:
 	box-sizing: border-box;
 }
 
-section {
+/* section {
 	height: 100vh;
-}
+} */
 
 /* xs screens */
 @media screen and (min-width: 200px) {
@@ -734,7 +734,7 @@ input[type='button'] {
 }
 
 #send {
-	margin-left: 1.5em;
+	/* margin-left: 1.5em; */
 	width: 100px;
 	font-weight: bold;
 	font-size: large;
@@ -749,6 +749,7 @@ input[type='button'] {
 	font-weight: bold;
 	color: white;
 	text-align: center;
+	/* width: 100px; */
 	/* font-size: small; */
 	/* height: 25px; */
 }
