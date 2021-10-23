@@ -84,6 +84,9 @@ Bootstrap Breakpoints:
 		width: 100%;
 		font-size: 1rem;
 	}
+	#aboutPara {
+		margin: 20px;
+	}
 }
 /* => medium screens */
 @media screen and (min-width: 768px) {
@@ -104,6 +107,7 @@ Bootstrap Breakpoints:
 		width: 100%;
 		font-size: 1.1rem;
 	}
+
 }
 /* => large screens */
 @media screen and (min-width: 992px) {
@@ -126,6 +130,9 @@ Bootstrap Breakpoints:
 	#landing .button {
 		width: 50%;
 		font-size: 1.2rem;
+	}
+	#aboutPara {
+		margin-right: 50px;
 	}
 
 }
@@ -319,7 +326,7 @@ h1 u {
 	height: 1000px;
 	position: relative;
 	background: no-repeat center/cover url('/website\ images/aboutBG.jpg');
-	background-position: center;
+	/* background-position: center; */
 	padding-top: 14%
 	
 }
@@ -331,9 +338,6 @@ h1 u {
 	/* padding: 5em; */
 	width: 100%;
 	/* height: 20px; */
-}
-#aboutPara {
-	margin-right: 50px;
 }
 .aboutInfo h1 {
 	font-weight: bold;
@@ -378,7 +382,7 @@ h1 u {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color: rgba(255, 255, 255, 0.7);
+	/* background-color: rgba(255, 255, 255, 0.7); */
 	padding: 2.5rem;
 }
 #mission h3 {
@@ -681,6 +685,7 @@ div #sustainRM {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size:16px;
+	margin:auto;
 
 }
 
