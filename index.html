@@ -9,7 +9,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Personal CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
     <title>EVFY</title>
@@ -18,11 +21,14 @@
 <body>
     <div class="container-fluid ">
         <header class="sticky-top">
+            
             <nav class="navbar navbar-dark navbar-expand-xl">
+
                 <a class="navbar-brand logo " href="#landing"><img
                         src="EVFY Logos/EVFY_logos-white_green_green_border_noTagline.png"/></a>
                 <!-- Hamburger Menu -->
                 <!-- Values for data-target and aria-controls must match id of div with the collapse class -->
+                <button id="loginBtn" class="btn float-right" data-toggle="modal" data-target="#login"><i class="bi bi-box-arrow-in-right"></i>  Log In</button>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,8 +65,34 @@
                         </li>
                     </ul>
                 </div>
+
             </nav>
         </header>
+        
+<div class="modal" tabindex="-1" role="dialog" id="login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sustainability Index Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+            <label for="inputUserName">Username</label>
+            <input id="inputUserName" class="form-control">
+            <label for="inputEmail">Email</label>
+            <input id="inputEmail" class="form-control">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
         <main>
             <!-- Landing page -->
             <section id="landing">
@@ -83,27 +115,30 @@
 
             <!-- Start About EVFY -->
             <section id="about">
-                <div class="aboutInfo">
+                <div class="aboutInfo container-fluid">
                     <h1>About EVFY</h1>
-                    <p>
-                    <strong>EVFY</strong> – a cutting-edge clean tech start-up – offers green
-                    solutions, starting with electric mobility, to help
-                    communities live more sustainable lives.<br /><br />
-
-                    With EVFY, consumers become members of our sustainability
-                    program, known as <strong>The Sustainability Index.</strong>This program
-                    provides substantial savings and rewards for being a conscious
-                    consumer aiming to live carbon free.<br /><br />
-
-                    Through our program, EVFY aims to help people become as
-                    carbon-free as possible. We educate and guide on lifestyle
-                    changes and provide services and resources to 'go green'.<br /><br />
-
-                    <strong>The EVFY Sustainability Index</strong> is the new
-                    benchmark for consumers to understand the environmental impact
-                    of their decisions and social capital to share amongst peers
-                    for a broader goal of making a world-wide impact.
-                    </p>
+                    <div id="aboutPara" class="row">
+                        <p class="col-lg-6 offset-lg-6">
+                            <strong>EVFY</strong> – a cutting-edge clean tech start-up – offers green
+                            solutions, starting with electric mobility, to help
+                            communities live more sustainable lives.<br /><br />
+        
+                            With EVFY, consumers become members of our sustainability
+                            program, known as <strong>The Sustainability Index.</strong>This program
+                            provides substantial savings and rewards for being a conscious
+                            consumer aiming to live carbon free.<br /><br />
+        
+                            Through our program, EVFY aims to help people become as
+                            carbon-free as possible. We educate and guide on lifestyle
+                            changes and provide services and resources to 'go green'.<br /><br />
+        
+                            <strong>The EVFY Sustainability Index</strong> is the new
+                            benchmark for consumers to understand the environmental impact
+                            of their decisions and social capital to share amongst peers
+                            for a broader goal of making a world-wide impact.
+                            </p>
+                    </div>
+                    
                 </div>
                 <!-- <div class="aboutImg"></div> -->
                 <!-- <div id="wrapper">
@@ -321,6 +356,8 @@
                 <div class="page1">
                     <h1>Our Partners</h1>
                 </div>
+            </section>
+            <section>
                 <div class="page2">
                     <div class=".container-fluid">
                         <div id="item1">
@@ -383,7 +420,9 @@
                         </div>
                     </div>
                 </div>    
+
             </section>
+
             <!-- End Our Partners -->
 
             <!-- Start Contact Us -->

@@ -11,34 +11,34 @@ Bootstrap Breakpoints:
 
 @font-face {
 	font-family: NunitoSans;
-	src: url('/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Light.ttf');
+	src: url('/Font/NunitoSans/NunitoSans-Light.ttf');
 	font-weight: lighter;
 }
 @font-face {
 	font-family: NunitoSans;
-	src: url('/GreenTeamEVFY/Font/NunitoSans/NunitoSans-LightItalic.ttf');
+	src: url('/Font/NunitoSans/NunitoSans-LightItalic.ttf');
 	font-weight: lighter;
 	font-style: italic;
 }
 @font-face {
 	font-family: NunitoSans;
-	src: url('/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Regular.ttf');
+	src: url('/Font/NunitoSans/NunitoSans-Regular.ttf');
 	font-weight: normal;
 }
 @font-face {
 	font-family: NunitoSans;
-	src: url('/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Italic.ttf');
+	src: url('/Font/NunitoSans/NunitoSans-Italic.ttf');
 	font-weight: normal;
 	font-style: italic;
 }
 @font-face {
 	font-family: NunitoSans;
-	src: url('/GreenTeamEVFY/Font/NunitoSans/NunitoSans-Bold.ttf');
+	src: url('/Font/NunitoSans/NunitoSans-Bold.ttf');
 	font-weight: bold;
 }
 @font-face {
 	font-family: NunitoSans;
-	src: url('/GreenTeamEVFY/Font/NunitoSans/NunitoSans-BoldItalic.ttf');
+	src: url('/Font/NunitoSans/NunitoSans-BoldItalic.ttf');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -48,9 +48,10 @@ Bootstrap Breakpoints:
 	box-sizing: border-box;
 }
 
-body {
-	background-color: #f0f0f0;
+section {
+	height: 100vh;
 }
+
 /* xs screens */
 @media screen and (min-width: 200px) {
 	html {
@@ -126,7 +127,7 @@ body {
 		width: 50%;
 		font-size: 1.2rem;
 	}
-	
+
 }
 
 /* >= xlarge screens */
@@ -162,37 +163,7 @@ body {
 
 /* End Media Queries */
 
-/* Begin Body */
-body div a {
-	background-color: transparent;
-	color: #8cc63f;
-	font-weight: 700;
-	text-decoration: none;
-}
 
-body div a:hover {
-	text-decoration: none;
-	color: white;
-}
-
-h3.title {
-	text-decoration: underline solid #fff;
-	line-height: 2em;
-	font-size: 30px;
-}
-
-p {
-	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-}
-
-h1 u {
-	text-decoration-color: #8cc63f;
-}
-/* End Body */
 
 /* Begin Header */
 
@@ -230,6 +201,18 @@ nav {
 	);
 	z-index: 1001;
 }
+header {
+	position: relative;
+}
+#loginBtn {
+	background: #75B44D;
+	/* border: black solid 2px; */
+	color: white;
+	padding: 5px 25px 5px 25px;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
 
 /* dropdown */
 
@@ -264,6 +247,39 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 }
 
 /* End Header */
+
+/* Begin Body */
+
+body {
+	background-color: #f0f0f0;
+}
+body div a {
+	background-color: transparent;
+	color: #8cc63f;
+	font-weight: 700;
+	text-decoration: none;
+}
+body div a:hover {
+	text-decoration: none;
+	color: white;
+}
+h3.title {
+	text-decoration: underline solid #fff;
+	line-height: 2em;
+	font-size: 30px;
+}
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+h1 u {
+	text-decoration-color: #8cc63f;
+}
+/* End Body */
 
 /* Begin Landing section */
 .centerTextBox {
@@ -302,27 +318,35 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 	width: 100%;
 	height: 1000px;
 	position: relative;
-	background: no-repeat url('/website\ images/aboutBG.jpg');
+	background: no-repeat center/cover url('/website\ images/aboutBG.jpg');
 	background-position: center;
-	background-size: cover;
+	padding-top: 14%
+	
+}
+#about h1 {
+	width: 100px;
+	margin-left: 90px;
 }
 .aboutInfo {
-	padding: 5em;
-	width: 80%;
-	height: 20px;
+	/* padding: 5em; */
+	width: 100%;
+	/* height: 20px; */
+}
+#aboutPara {
+	margin-right: 50px;
 }
 .aboutInfo h1 {
 	font-weight: bold;
 	margin-left: 0.5em;
 }
 .aboutInfo p {
-	width: 65%;
-	padding: 0.5em;
-	margin: 9em 9em 10em 40em;
+	width: 100%;
+	padding: 0.5em 1em;
+	/* margin: 9em 9em 10em 40em; */
 	background: rgba(255, 255, 255, 0.7);
 	text-align: justify;
 }
-.aboutImg {
+/* .aboutImg {
 	width: 40%;
 	height: 32em;
 	top: -50vh;
@@ -335,8 +359,8 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 	background: no-repeat url('/website\ images/iStock-947959208.jpg');
 	background-position: center;
 	background-size: cover;
-}
-#about img {
+} */
+/* #about img {
 	border-radius: 50%;
 	position: absolute;
 	margin: auto;
@@ -347,17 +371,8 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 	object-fit: cover;
 	width: 600px;
 	height: 600px;
-}
-#about #wrapper {
-	/* padding: 25% 25%; */
-	position: relative;
-	/* height: 100%; */
-}
-#about #wrapper::after {
-	content: "";
-	clear: both;
-	display: table;
-}
+} */
+
 #mission {
 	height: 700px;
 	display: flex;
