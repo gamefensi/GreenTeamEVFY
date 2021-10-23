@@ -662,7 +662,11 @@ div #sustainRM {
 /* contact form*/
 #contactUs {
 	background-image: url(/website%20images/iStock-1091251306.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
 	background-size: cover;
+	font-size:16px;
+
 }
 
 #contactForm {
@@ -670,14 +674,17 @@ div #sustainRM {
 	border: none;
 	opacity: 0.8;
 	padding: 1em 2em 1em 2em;
-	margin: 1em;
+	margin: 6em auto 3em auto;
+	/* width:100%;
+	height: auto; */
 }
 
-#contactUs > .grid-container {
+
+/* #contactUs > .grid-container {
 	display: grid;
 	grid-template-columns: 58% auto;
 	padding: 15px;
-}
+} */
 
 input.form-control {
 	background-color: lightgray;
@@ -727,8 +734,8 @@ input[type='button'] {
 	font-weight: bold;
 	color: white;
 	text-align: center;
-	font-size: small;
-	height: 25px;
+	/* font-size: small; */
+	/* height: 25px; */
 }
 /*End of contact form */
 
