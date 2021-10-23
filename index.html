@@ -19,7 +19,7 @@
     <div class="container-fluid ">
         <header class="sticky-top">
             <nav class="navbar navbar-dark navbar-expand-xl">
-                <a class="navbar-brand logo " href="#"><img
+                <a class="navbar-brand logo " href="#landing"><img
                         src="EVFY Logos/EVFY_logos-white_green_green_border_noTagline.png"/></a>
                 <!-- Hamburger Menu -->
                 <!-- Values for data-target and aria-controls must match id of div with the collapse class -->
@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav">
                         <li class="nav-item pr-5 dropdown">
-                            <a class="nav-link active" href="#about">About EVFY</a>
+                            <a class="nav-link text-white" href="#about">About EVFY</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#mission">Our Mission</a></li>
                                 <li><a href="#team">Our Team</a></li>
@@ -64,7 +64,7 @@
         <main>
             <!-- Landing page -->
             <section id="landing">
-                <div class="landingInfo">
+                <div class="landingInfo d-flex align-content-center flex-wrap">
                     <div class="centerTextBox">
                         <h1><u>Introducing the Sustainability Index</u></h1>
                         <p >
@@ -283,12 +283,12 @@
                                 <tr>
                                     <td>Description</td>
                                     <td>
-                                        • Home energy monitoring and monthly reports <br>
-                                        • Sustainability Index
+                                        •Home energy monitoring and monthly reports <br>
+                                        •Sustainability Index
                                     </td>
-                                    <td>• Automated energy management to reduce monthly energy bill and carbon footprint (RECs)</td>
-                                    <td>• Incorporation of lifestyle activities outside home energy use to Sustainability Index</td>
-                                    <td>• Access to exclusive green retailers and discounts</td>
+                                    <td>•Automated energy management to reduce monthly energy bill and carbon footprint (RECs)</td>
+                                    <td>•Incorporation of lifestyle activities outside home energy use to Sustainability Index</td>
+                                    <td>•Access to exclusive green retailers and discounts</td>
                                 </tr>
                             </tbody>
                             <tfoot>
@@ -302,6 +302,12 @@
                             </tfoot>
                         </table>
                     </div>
+                    <button
+                    href="#" 
+                    type="button" 
+                    class="button" 
+                    id="sustainTableCTA"> Sign up Today.
+                    </button>
                 </div>
             </section>
             <!-- End Sustainability Roadmap-->
@@ -509,6 +515,7 @@
 
     <!--Contact Form JS-->
     <script src="js/contact.js"></script>
+    <script src="js/activescroll.js"></script>
 </body>
 
 </html>

@@ -53,7 +53,7 @@ body {
 }
 /* xs screens */
 @media screen and (min-width: 200px) {
-	p {
+	html {
 		font-size: 1rem;
 	}
 	#sustainRM h1 {
@@ -65,11 +65,23 @@ body {
 	#phoneBottom {
 		width: 225px;
 	}
+	#sustainTable .button {
+		width: 100%;
+	}
+	#landing .button {
+		width: 75%;
+	}
+
 }
 /* => small screens */
 @media screen and (min-width: 576px) {
 	html {
 		font-size: 1.1rem;
+		line-height: 1.5em;
+	}
+	#landing .button {
+		width: 100%;
+		font-size: 1rem;
 	}
 }
 /* => medium screens */
@@ -83,6 +95,14 @@ body {
 	#phoneBottom {
 		width: 375px;
 	}
+	#sustainTable .button {
+		width: 70%;
+		font-size: 1.1rem;
+	}
+	#landing .button {
+		width: 100%;
+		font-size: 1.1rem;
+	}
 }
 /* => large screens */
 @media screen and (min-width: 992px) {
@@ -95,6 +115,18 @@ body {
 	#sustainTable table {
 		width: 70%;
 	}
+	#landing .centerTextBox {
+		max-width: 50%;
+	}
+	#sustainTable .button {
+		width: 50%;
+		font-size: 1.2rem;
+	}
+	#landing .button {
+		width: 50%;
+		font-size: 1.2rem;
+	}
+	
 }
 
 /* >= xlarge screens */
@@ -111,12 +143,20 @@ body {
 	#phoneBottom {
 		width: 600px;
 	}
+	#sustainTable .button {
+		width: 25%;
+	}
+
 }
 
 /* >= xxlarge screens */
 @media screen and (min-width: 1400px) {
 	html {
 		font-size: 1.5rem;
+	}
+	#landing .button {
+		width: 50%;
+		font-size: 1.6rem;
 	}
 }
 
@@ -157,15 +197,16 @@ h1 u {
 /* Begin Header */
 
 .navbar-toggler {
-	/* background: rgb(49, 49, 49); */
 	color: white;
 }
-.navbar-nav .nav-item {
-	padding: 5px 10px 5px 10px;
-}
-.nav-link.active {
+/* .navbar-nav .nav-item {
+} */
+.nav-link.active, .nav-link:hover {
 	background: #8cc63f;
+	border: #8cc63f solid 1px;
+	margin: 0;
 }
+#navb
 .navbar-brand {
 	margin-right: 100px;
 }
@@ -187,7 +228,6 @@ nav {
 		rgba(69, 68, 68, 0) 0%,
 		rgb(0, 0, 0) 100%
 	);
-	display: flexbox;
 	z-index: 1001;
 }
 
@@ -206,22 +246,27 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 	min-width: 50px;
 	border-radius: 0%;
 	border: none;
+	width: 100%;
+	padding: 0;
 }
 .dropdown-menu li {
-	padding: 6px 16px 6px 16px;
+	padding: 6px 16px 6px 16px; 
+}
+.dropdown-menu li:hover {
+	background: #4e7512;
 }
 
 .dropdown-menu li a {
-	/* border: #751212 solid 1px; */
 	color: white;
+	display:inline-block;
+	width:100%;
+	height:100%;
 }
 
 /* End Header */
 
 /* Begin Landing section */
 .centerTextBox {
-	/* height: 50%; */
-	max-width: 50%;
 	text-align: center;
 	margin: auto;
 	padding: 25px;
@@ -232,7 +277,7 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 .landingInfo {
 	height: 1000px;
 	width: 100%;
-	padding: 20% 0 40% 0;
+	padding: 20% 0 20% 0;
 	background: no-repeat url('/website\ images/landingBG.jpg');
 	background-size: cover;
 }
@@ -529,6 +574,14 @@ div #sustainRM {
 #sustainTable table tfoot td {
 	text-align: center;
 	background: #ebf1e9;
+}
+#sustainTable .button {
+	margin: 50px auto;
+	display: block;
+	color: #000;
+	background-color: #92D050;
+	border: #85C150 solid 1px;
+	padding: 10px;
 }
 
 /* end Sustainability Roadmap */
