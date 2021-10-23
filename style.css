@@ -48,10 +48,6 @@ Bootstrap Breakpoints:
 	box-sizing: border-box;
 }
 
-/* section {
-	height: 100vh;
-} */
-
 /* xs screens */
 @media screen and (min-width: 200px) {
 	html {
@@ -72,7 +68,23 @@ Bootstrap Breakpoints:
 	#landing .button {
 		width: 75%;
 	}
-
+	#about{
+		background: no-repeat  url('/website\ images/aboutBG.jpg');
+		background-size: cover;
+		background-position: -250px center;
+	}
+	#sustainRM::before {
+		content: '';
+		background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+			url('website\ images/sustainRM-bg.webp');
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+	}
 }
 /* => small screens */
 @media screen and (min-width: 576px) {
@@ -106,6 +118,14 @@ Bootstrap Breakpoints:
 	#landing .button {
 		width: 100%;
 		font-size: 1.1rem;
+	}
+	#about{
+		background: no-repeat  url('/website\ images/aboutBG.jpg');
+		background-size: cover;
+		background-position: left center;
+	}
+	#sustainRM::before {
+		
 	}
 
 }
@@ -325,9 +345,7 @@ h1 u {
 	width: 100%;
 	height: 1000px;
 	position: relative;
-	background: no-repeat center/cover url('/website\ images/aboutBG.jpg');
-	/* background-position: center; */
-	padding-top: 14%
+	padding-top: 14%;
 	
 }
 #about h1 {
@@ -515,16 +533,8 @@ div #sustainRM {
 	padding-bottom: 20%;
 }
 #sustainRM::before {
-	content: '';
-	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-		url('website\ images/sustainRM-bg.webp');
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
+
+
 }
 #sustainRM .row {
 	/* padding: 1em 20em 0em 5em; */
