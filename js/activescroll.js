@@ -30,17 +30,19 @@ $(document).ready(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
             // var refElementChild = $(currLink > a);
-            var currLinkChildren = $(this).children("a");
+            var currLinkChildren = $(this).siblings("ul").find("a");
             var refElementChildren = $(currLinkChildren).attr("href");
-            if (refElement.position().top <= scrollPos 
-            || refElementChildren.position().top <=scrollPos 
-            && refElement.position().top + refElement.height() > scrollPos 
-            || refElementChildren.position().top + refElementChildren.height() > scrollPos) {
+            if (
+                refElement.position().top <= scrollPos + 20
+                || refElementChildren.position().top <=scrollPos + 20
+                && refElement.position().top + refElement.height() > scrollPos + 20
+                || refElementChildren.position().top + refElementChildren.height() > scrollPos + 20) {
                 $('#navbarContent ul li a').removeClass("active");
                 currLink.addClass("active");
                 // console.log(scrollPos);
                 // console.log(currLink);
-                console.log(refElement);
+                // console.log(refElement);
+                console.log(refElementChildren);
             }
             else{
                 currLink.removeClass("active");

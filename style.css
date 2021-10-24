@@ -91,6 +91,10 @@ Bootstrap Breakpoints:
 	#aboutPara {
 		margin: 20px;
 	}
+	#codes {
+		font-size: smaller;
+		min-width: 80px;
+	}
 }
 /* => small screens */
 @media screen and (min-width: 576px) {
@@ -129,7 +133,9 @@ Bootstrap Breakpoints:
 		background-size: cover;
 		background-position: -200px center;
 	}
-
+	#codes {
+		font-size: 14pt;
+	}
 
 }
 /* => large screens */
@@ -466,17 +472,23 @@ h1 u {
 }
 #teamMember h5 {
 	color: #8cc63f;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
+
 .teamHeadShots {
 	width: 200px;
 	margin: 6px;
 	padding: 6px;
 	text-align: center;
+	font-weight:bold !important;
+	color: #9B9B9B;
 }
 .teamHeadShots img {
 	clip-path: circle(50%);
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	margin-bottom: 5px;
 }
 /* End About Section */
 
@@ -516,6 +528,9 @@ h1 u {
 	background-position: center;
 	background-size: 90%;
 }
+.sustainabilityInfo .row img {
+	max-width: 600px;
+}
 #sustainabilityIndex3 {
 	height: 700px;
 	display: flex;
@@ -524,7 +539,7 @@ h1 u {
 	/* background-color: rgba(255, 255, 255, 0.7); */
 	padding: 2em;
 }
-#sustainabilityIndex3 h4 {
+#sustainabilityIndex3 h3 {
 	font-family: bold;
 	color: #8cc63f;
 	text-align: justify;
@@ -708,7 +723,8 @@ div #sustainRM {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-size:16px;
+	font-size: 16px;
+	padding-top: 20%;
 
 }
 
@@ -720,6 +736,8 @@ div #sustainRM {
 	margin: 6em auto 3em auto;
 	/* width:100%;
 	height: auto; */
+	font-size: 14pt;
+	font-weight:bold;
 }
 
 
