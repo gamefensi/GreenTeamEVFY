@@ -629,52 +629,43 @@ div #sustainRM {
 
 /* Partnership Section */
 
-.page1 {
+#page1 {
 	background-image: url(/website%20images/iStock-1281885421.jpg);
 	background-repeat: norepeat;
-	height: 1000px;
+	height: 100vh;
 	background-size: cover;
 	background-position: center center;
 }
 
-.page1 > h1 {
+#page1 h1{
 	font-size: 70px;
-	padding-top: 1em;
+	padding-top: 2.5em;
 	text-align: center;
 }
 
-.page2 h1 {
+.page2 h1,
+#item3 h1 {
 	color: #8cc63f;
 	font-size: 25px;
 	font-weight: bold;
 }
 
-#item1 {
-	/* background-color: lightgray;*/
-	padding: 3em 4em 3em 5em;
-}
 
-#item1 p {
-	padding: 2em 4em 2em 0;
+#item1 p,
+#item2 p,
+#item3 p {
+	padding: 2em 4em 2em 1em;
+	font-size: 18px;
 }
 
 #item2 {
 	background-color: #fff;
-	padding: 3em 4em 4em 5em;
+
 }
 
-#item3 {
-	/* background-color: lightgray; */
-	padding: 3em 4em 2em 5em;
-}
-
-#item3 img {
-	padding: 3em 0;
-}
-
-#item3 p {
-	padding: 3em 2em 3em 0;
-}
+/* #item3 p {
+	padding: 3em 3em 3em 0;
+} */
 
 /* End of Partnership Section */
 
@@ -711,6 +702,7 @@ input.form-control {
 	height: 25px;
 	border-radius: 0;
 	border: solid gray 0.5px;
+	font-size: 16px;
 }
 
 /* .button {
