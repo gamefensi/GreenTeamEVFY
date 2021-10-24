@@ -48,10 +48,6 @@ Bootstrap Breakpoints:
 	box-sizing: border-box;
 }
 
-/* section {
-	height: 100vh;
-} */
-
 /* xs screens */
 @media screen and (min-width: 200px) {
 	html {
@@ -72,7 +68,33 @@ Bootstrap Breakpoints:
 	#landing .button {
 		width: 75%;
 	}
-
+	#about{
+		background: no-repeat  url('/website\ images/aboutBG.jpg');
+		background-size: cover;
+		background-position: -250px center;
+	}
+	#sustainRM::before {
+		content: '';
+		background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+			url('website\ images/sustainRM-bg.webp');
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+	}
+	#about h1 {
+		margin: 50px auto;
+	}
+	#aboutPara {
+		margin: 20px;
+	}
+	#codes {
+		font-size: smaller;
+		min-width: 80px;
+	}
 }
 /* => small screens */
 @media screen and (min-width: 576px) {
@@ -84,9 +106,7 @@ Bootstrap Breakpoints:
 		width: 100%;
 		font-size: 1rem;
 	}
-	#aboutPara {
-		margin: 20px;
-	}
+
 }
 /* => medium screens */
 @media screen and (min-width: 768px) {
@@ -106,6 +126,15 @@ Bootstrap Breakpoints:
 	#landing .button {
 		width: 100%;
 		font-size: 1.1rem;
+	}
+
+	#about{
+		background: no-repeat  url('/website\ images/aboutBG.jpg');
+		background-size: cover;
+		background-position: -200px center;
+	}
+	#codes {
+		font-size: 14pt;
 	}
 
 }
@@ -133,6 +162,16 @@ Bootstrap Breakpoints:
 	}
 	#aboutPara {
 		margin-right: 50px;
+		margin-bottom: 100px;
+	}
+	#about {
+		background: no-repeat  url('/website\ images/aboutBG.jpg');
+		background-size: cover;
+		background-position: 200 top;
+	}
+	#about h1 {
+		width: 100px;
+		margin-left: 30px;
 	}
 
 }
@@ -154,6 +193,9 @@ Bootstrap Breakpoints:
 	#sustainTable .button {
 		width: 25%;
 	}
+	#sustainabilityIndex h1 {
+		font-size: 70px;
+	}
 
 }
 
@@ -166,6 +208,12 @@ Bootstrap Breakpoints:
 		width: 50%;
 		font-size: 1.6rem;
 	}
+	#about{
+		background: no-repeat  url('/website\ images/aboutBG.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+	
 }
 
 /* End Media Queries */
@@ -323,17 +371,11 @@ h1 u {
 /* Begin  About Section */
 #about {
 	width: 100%;
-	height: 1000px;
 	position: relative;
-	background: no-repeat center/cover url('/website\ images/aboutBG.jpg');
-	/* background-position: center; */
-	padding-top: 14%
+	padding-top: 10%;
 	
 }
-#about h1 {
-	width: 100px;
-	margin-left: 90px;
-}
+
 .aboutInfo {
 	/* padding: 5em; */
 	width: 100%;
@@ -420,7 +462,7 @@ h1 u {
 	background-size: 100%;
 }
 #teamMember {
-	height: 700px;
+	/* height: 700px; */
 	display: flex;
 	flex-wrap: wrap;
 	gap: 6em;
@@ -430,17 +472,23 @@ h1 u {
 }
 #teamMember h5 {
 	color: #8cc63f;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
+
 .teamHeadShots {
 	width: 200px;
 	margin: 6px;
 	padding: 6px;
 	text-align: center;
+	font-weight:bold !important;
+	color: #9B9B9B;
 }
 .teamHeadShots img {
 	clip-path: circle(50%);
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	margin-bottom: 5px;
 }
 /* End About Section */
 
@@ -450,11 +498,10 @@ h1 u {
 	background: no-repeat center/cover
 		url('/website\ images/iStock-943875208.jpg');
 	background-position: center;
-	background-size: 100%;
+	/* background-size: 100%; */
 }
 #sustainabilityIndex1 h1 {
 	font-weight: bold;
-	font-size: 70px;
 	text-align: center;
 	padding-top: 2em;
 }
@@ -481,6 +528,9 @@ h1 u {
 	background-position: center;
 	background-size: 90%;
 }
+.sustainabilityInfo .row img {
+	max-width: 600px;
+}
 #sustainabilityIndex3 {
 	height: 700px;
 	display: flex;
@@ -489,7 +539,7 @@ h1 u {
 	/* background-color: rgba(255, 255, 255, 0.7); */
 	padding: 2em;
 }
-#sustainabilityIndex3 h4 {
+#sustainabilityIndex3 h3 {
 	font-family: bold;
 	color: #8cc63f;
 	text-align: justify;
@@ -514,18 +564,7 @@ div #sustainRM {
 	position: relative;
 	padding-bottom: 20%;
 }
-#sustainRM::before {
-	content: '';
-	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-		url('website\ images/sustainRM-bg.webp');
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-}
+
 #sustainRM .row {
 	/* padding: 1em 20em 0em 5em; */
 	/* max-width: 70%; */
@@ -675,7 +714,8 @@ div #sustainRM {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-size:16px;
+	font-size: 16px;
+	padding-top: 20%;
 
 }
 
@@ -687,6 +727,8 @@ div #sustainRM {
 	margin: 6em auto 3em auto;
 	/* width:100%;
 	height: auto; */
+	font-size: 14pt;
+	font-weight:bold;
 }
 
 
