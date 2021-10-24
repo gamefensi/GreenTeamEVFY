@@ -420,9 +420,10 @@ h1 u {
 } */
 
 #mission {
-	height: 700px;
+	height: 1000px;
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+	/* flex-direction: row; */
 	align-items: center;
 	/* background-color: rgba(255, 255, 255, 0.7); */
 	padding: 2.5rem;
@@ -431,17 +432,18 @@ h1 u {
 	font-family: bold;
 	color: #8cc63f;
 }
-.missionImg {
+/* .missionImg {
 	width: 100%;
 	height: 600px;
 	background: no-repeat url('/website\ images/iStock-533578039.jpg');
 	background-position: center;
 	background-size: 70%;
-}
+} */
 #team {
-	height: 700px;
+	height: 1000px;
 	display: flex;
-	flex-direction: row;
+	/* flex-direction: row; */
+	justify-content: center;
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.7);
 	padding: 2em;
@@ -454,15 +456,15 @@ h1 u {
 .teamInfo {
 	margin-left: 2em;
 }
-.teamImg {
+/* .teamImg {
 	width: 100%;
 	height: 600px;
 	background: no-repeat url('/website\ images/iStock-537599600.jpg');
 	background-position: center;
 	background-size: 100%;
-}
-#teamMember {
-	/* height: 700px; */
+} */
+/* #teamMember {
+	height: 700px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 6em;
@@ -490,11 +492,79 @@ h1 u {
 	filter: grayscale(100%);
 	margin-bottom: 5px;
 }
+*/
+#teamMember {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.7);
+}
+#teamMember h5 {
+    color: #8cc63f;
+}
+.teamHeadShots1 {
+    margin: 6px;
+    padding: 6px;
+    text-align: center;
+    /* gap: 8em; */
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+#teamHeadShots1 img {
+    clip-path: circle(50%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(90%);
+    max-width: 150px;
+    margin-bottom: 1em;
+    background: cover;
+} 
+#teamHeadShots2 {
+    text-align: center;
+    /*gap: 7em;
+    display: flex;
+    flex-direction: row; */
+    text-align: center;
+}
+#teamHeadShots2 img {
+    clip-path: circle(50%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(90%);
+    max-width: 150px;
+    margin-top: -10em;
+}
+/* small screens */
+@media screen and (max-width: 576px) {
+	#teamMember {
+		width: 100%;
+		height: 1600px;
+	}
+    #teamMember #teamHeadShots1 {
+        display: inline-block;
+		/* justify-content: center;
+		align-items: center; */
+        /* padding:1.3em 1.5em; */
+        /* width: auto; */
+    }
+    /* #teamMember #teamHeadShots2 {
+        display: inline-block;
+        margin:0 0.75em;
+        padding:1.3em 1.5em;
+        width: auto;
+    } */
+    #mission .row img {
+        width: 100%;
+    }
+}
+
 /* End About Section */
 
 /* Begin Sustainability Index */
 #sustainabilityIndex1 {
-	height: 700px;
+	height: 900px;
 	background: no-repeat center/cover
 		url('/website\ images/iStock-943875208.jpg');
 	background-position: center;
@@ -503,10 +573,10 @@ h1 u {
 #sustainabilityIndex1 h1 {
 	font-weight: bold;
 	text-align: center;
-	padding-top: 2em;
+	padding-top: 3.5em;
 }
 #sustainabilityIndex2 {
-	height: 700px;
+	height: 1000px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -521,18 +591,18 @@ h1 u {
 	font-weight: 30em;
 	color: #8cc63f;
 }
-.sustainabilityIndexImg {
+/* .sustainabilityIndexImg {
 	width: 100%;
 	height: 600px;
 	background: no-repeat url('/website\ images/iStock-1295057140.jpg');
 	background-position: center;
 	background-size: 90%;
-}
+} */
 .sustainabilityInfo .row img {
 	max-width: 600px;
 }
 #sustainabilityIndex3 {
-	height: 700px;
+	height: 1000px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -547,13 +617,16 @@ h1 u {
 .methodologyInfo {
 	margin-left: 2em;
 }
-.methodologyImg {
+.methodologyInfo .row img{
+	max-width: 700px;
+}
+/* .methodologyImg {
 	width: 100%;
 	height: 600px;
 	background: no-repeat url('/website\ images/iStock-956436966 copy.jpg');
 	background-position: center;
-	background-size: 100%;
-}
+	background-size: 90%;
+} */
 /* End Sustainability Index */
 
 /* Begin Sustainability Roadmap */
