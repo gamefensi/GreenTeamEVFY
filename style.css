@@ -100,6 +100,24 @@ Bootstrap Breakpoints:
 	.nav-item {
 		max-width: 190px;
 	}
+	#loginPage {
+		background: url("/website\ images/iStock-1165131520.jpg");
+		/* background-size:  */
+		background-size: cover;
+		background-repeat:no-repeat;
+		height: 400px;
+		background-position: center bottom;
+	}
+	#loginPage h1 {
+		color: #FFF;
+		padding: 20px 0 20px 0;
+		text-align: center;
+		font-size: 25pt;
+	}
+	#loginPage button.btn.btn-light {
+		width: 70%;
+		margin: 20px 10% 0 10%;
+	}
 }
 /* => small screens */
 @media screen and (min-width: 576px) {
@@ -111,6 +129,13 @@ Bootstrap Breakpoints:
 		width: 100%;
 		font-size: 1rem;
 	}
+	#loginPage h1 {
+		color: #FFF;
+		padding: 20px 0 20px 0;
+		text-align: center;
+		font-size: 30pt;
+	}
+
 
 }
 /* => medium screens */
@@ -143,6 +168,17 @@ Bootstrap Breakpoints:
 	#teamMember .row {
 		margin-bottom: 50px;
 	}
+	#loginPage h1 {
+		color: #FFF;
+		padding: 20px 0 20px 0;
+		text-align: center;
+		font-size: 40pt;
+	}
+	#loginPage button.btn.btn-light {
+		width: 50%;
+		margin: 20px 10% 0 10%;
+	}
+
 }
 /* => large screens */
 @media screen and (min-width: 992px) {
@@ -175,7 +211,25 @@ Bootstrap Breakpoints:
 		width: 100px;
 		margin-left: 30px;
 	}
-
+	#loginPage {
+		background: url("/website\ images/iStock-1165131520.jpg");
+		/* background-size:  */
+		background-size: cover;
+		background-repeat:no-repeat;
+		height: 800px;
+		background-position: center bottom;
+	}
+	#loginPage h1 {
+		color: #FFF;
+		padding: 165px 0 50px 10%;
+		text-align: left;
+		font-size: 60pt;
+		font-weight: bold;
+	}
+	#loginPage button.btn.btn-light {
+		width: 30%;
+		margin: 0 10% 0 10%;
+	}
 }
 
 /* >= xlarge screens */
@@ -198,7 +252,13 @@ Bootstrap Breakpoints:
 	#sustainabilityIndex h1 {
 		font-size: 70px;
 	}
-
+	#loginPage h1 {
+		color: #FFF;
+		padding: 165px 0 50px 10%;
+		text-align: left;
+		font-size: 70pt;
+		font-weight: bold;
+	}
 }
 
 /* >= xxlarge screens */
@@ -217,6 +277,17 @@ Bootstrap Breakpoints:
 	}
 	.nav-item {
 		max-width: 250px;
+	}
+	#loginPage h1 {
+		color: #FFF;
+		padding: 165px 0 50px 10%;
+		text-align: left;
+		font-size: 80pt;
+		font-weight: bold;
+	}
+	#loginPage button.btn.btn-light {
+		width: 20%;
+		margin: 0 10% 0 10%;
 	}
 
 	
@@ -646,6 +717,7 @@ div #sustainRM {
 	font-size: 70px;
 	padding-top: 2.5em;
 	text-align: center;
+	font-weight: bold;
 }
 
 .page2 h1,
@@ -667,10 +739,6 @@ div #sustainRM {
 	background-color: #fff;
 
 }
-
-/* #item3 p {
-	padding: 3em 3em 3em 0;
-} */
 
 /* End of Partnership Section */
 
@@ -798,3 +866,9 @@ footer .icons img {
 	width: 26px;
 }
 /* end footer */
+/* start login page */
+
+
+#loginPage button.btn.btn-light {
+	font-weight: bold;
+}
