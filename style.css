@@ -9,6 +9,8 @@ Bootstrap Breakpoints:
 */
 /* Global */
 
+
+
 @font-face {
 	font-family: NunitoSans;
 	src: url('/Font/NunitoSans/NunitoSans-Light.ttf');
@@ -95,6 +97,9 @@ Bootstrap Breakpoints:
 		font-size: smaller;
 		min-width: 80px;
 	}
+	.nav-item {
+		max-width: 190px;
+	}
 }
 /* => small screens */
 @media screen and (min-width: 576px) {
@@ -127,11 +132,10 @@ Bootstrap Breakpoints:
 		width: 100%;
 		font-size: 1.1rem;
 	}
-
 	#about{
 		background: no-repeat  url('/website\ images/aboutBG.jpg');
 		background-size: cover;
-		background-position: -200px center;
+		background-position: -300px center;
 	}
 	#codes {
 		font-size: 14pt;
@@ -166,11 +170,7 @@ Bootstrap Breakpoints:
 		margin-right: 50px;
 		margin-bottom: 100px;
 	}
-	#about {
-		background: no-repeat  url('/website\ images/aboutBG.jpg');
-		background-size: cover;
-		background-position: 200 top;
-	}
+
 	#about h1 {
 		width: 100px;
 		margin-left: 30px;
@@ -215,7 +215,17 @@ Bootstrap Breakpoints:
 		background-size: cover;
 		background-position: center;
 	}
+	.nav-item {
+		max-width: 250px;
+	}
+
 	
+}
+
+@media screen and (min-width: 1600px) {
+	.nav-item {
+		max-width: 400px;
+	}
 }
 
 /* End Media Queries */
@@ -224,31 +234,37 @@ Bootstrap Breakpoints:
 
 /* Begin Header */
 
+#topNavBar {
+	margin-right: 0;
+	padding-right: 0
+}
 .navbar-toggler {
 	color: white;
 }
-/* .navbar-nav .nav-item {
-} */
+ul.navbar-nav.nav.nav-pills {
+	padding-right: 0;
+}
 .nav-link.active, .nav-link:hover {
 	background: #8cc63f;
 	border: #8cc63f solid 1px;
 }
-#navb
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: #8cc63f;
+}
 .navbar-brand {
-	margin-right: 100px;
+	margin-right: 50px;
 }
 div .collapse.navbar-collapse {
 	margin-top: 30px;
 }
 .nav-item {
-	font-size: 18pt;
 	text-align: center;
 }
 .logo img {
 	width: 150px;
 }
 nav {
-	padding: 30px;
+	padding: 15px;
 	background: rgb(69, 68, 68);
 	background: linear-gradient(
 		0deg,
@@ -313,7 +329,11 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 
 body {
 	background-color: #f0f0f0;
+	position: relative;
 }
+/* main {
+	position: relative;
+} */
 body div a {
 	background-color: transparent;
 	color: #8cc63f;
@@ -340,7 +360,6 @@ p {
 h1 u {
 	text-decoration-color: #8cc63f;
 }
-/* End Body */
 
 /* Begin Landing section */
 .centerTextBox {
